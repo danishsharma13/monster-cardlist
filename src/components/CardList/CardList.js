@@ -1,7 +1,12 @@
 import React from "react";
+import { Card } from '../Card/Card';
+import './CardList.css';
 
 export const CardList = ({users}) => {
-    const nameArray = users.map(userName => <h1>{userName.name}</h1>);
 
-    return <div>{nameArray}</div>
+    return( 
+        <div>
+            <Card users={users} />
+        </div>
+    )
 }
